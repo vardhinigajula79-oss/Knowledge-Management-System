@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Organizational Knowledge Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Organizational Knowledge Management System</h1>
+
+    <div class="container">
+
+        <h2>Add Knowledge</h2>
+
+        <input type="text" id="title" placeholder="Knowledge Title">
+
+        <textarea id="description" placeholder="Enter knowledge or information"></textarea>
+
+        <input type="text" id="category" placeholder="Category">
+
+        <button onclick="addKnowledge()">
+            Add Knowledge
+        </button>
+
+        <h2>Search Knowledge</h2>
+
+        <input type="text" id="search" placeholder="Search knowledge" onkeyup="searchKnowledge()">
+
+        <div id="knowledgeList"></div>
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
